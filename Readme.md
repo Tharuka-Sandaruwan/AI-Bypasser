@@ -1,8 +1,16 @@
-use the index html to obsfucate the words,so ai detectors will fail.then copy and paste the content to word and use that.word will show lot of grammar errors as it includes lot of non english characters.
+# Instructions for Using Obfuscated Text with Overleaf or LaTeX Editors
 
+## Step 1: Obfuscate the Text
 
-to use with overleaf or latex editiors,add below code to the preamble
-"
+1. Use the provided `index.html` to obfuscate the words so that AI detectors will fail.
+2. Copy and paste the obfuscated content into a Word document.
+3. Word will show a lot of grammar errors as it includes a lot of non-English characters.
+
+## Step 2: Prepare LaTeX Document
+
+To use the obfuscated text with Overleaf or other LaTeX editors, add the following code to the preamble of your LaTeX document:
+
+```latex
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern} % Optional: for better font rendering
@@ -24,6 +32,3 @@ to use with overleaf or latex editiors,add below code to the preamble
 \DeclareUnicodeCharacter{0435}{e} % Cyrillic Small Letter Ie
 \DeclareUnicodeCharacter{041E}{O} % Cyrillic Capital Letter O
 \DeclareUnicodeCharacter{043E}{o} % Cyrillic Small Letter O
-"
-add this before the document begin
-then paste the content generated from the index.html to the document body.
